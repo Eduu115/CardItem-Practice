@@ -1,4 +1,5 @@
 *{
+    font-family: 'Sansation', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -18,10 +19,34 @@ main{
     max-width: 640px;
     min-height: 334px;
     max-height: 334px;
-    background-color: rgb(221, 212, 198);
+    background-color: rgb(230, 219, 202);
     border-radius: 30px;
-    border: 2px solid burlywood;
+    border: 2px solid rgb(182, 146, 100);
 }
+button{
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    transition: transform;
+    transition-duration: 0.3s;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+h1{
+    color: rgb(139, 44, 0);
+}
+h2{
+    color: rgba(8, 167, 8, 0.842);
+}
+p{
+    color: rgb(121, 41, 4);
+}
+img{
+    border-radius: 10px;
+}
+
 
 main div{
     /* padding para todos los div de la card, asi no uso gap y no se me va el formato */
@@ -50,13 +75,30 @@ main div div{
     font-weight: 700;
     font-size: 30px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
+#buttons{
+    display: flex;
+    padding: 0;
+    padding-top: 20px;
+    gap: 7px;
+}
+    /* botones */
+#comprar{
+    background-color: rgba(8, 167, 8, 0.842);
+    color: white;
+}
+#carrito{
+    background-color: white;
+    color: rgba(8, 167, 8, 0.842);
+    border:solid 2px rgba(8, 167, 8, 0.842);
+}
+
 /* Clases */
 
 .minimal{
     font-size: 12px;
     color: rgb(192, 143, 78);
-    font-weight: 500;
+    font-weight: 300;
 }
-
