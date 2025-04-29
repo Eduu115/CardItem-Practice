@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    height: 100vh;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-width: 640px;
+    max-width: 640px;
+    min-height: 334px;
+    max-height: 334px;
+    background-color: rgb(221, 212, 198);
+    border-radius: 30px;
+    border: 2px solid burlywood;
+}
+
+main div{
+    /* padding para todos los div de la card, asi no uso gap y no se me va el formato */
+    padding: 20px;
+}
+
+main div div{
+    padding: 0;
+}
+
+/* ID */
+
+#col-main{
+    /* Tres cols, Titulo, precio, descripcion */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+#row-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#row-precio{
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+/* Clases */
+
+.minimal{
+    font-size: 12px;
+    color: rgb(192, 143, 78);
+    font-weight: 500;
+}
+
